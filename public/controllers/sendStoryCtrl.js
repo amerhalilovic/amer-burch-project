@@ -16,7 +16,7 @@ app.controller("sendStoryCtrl", function ($scope, $http, $location) {
                     "text": $scope.text,
                 }
             }).then(res => {
-                $location.path("/events")
+                $location.path("/stories")
             })
         }
     }
