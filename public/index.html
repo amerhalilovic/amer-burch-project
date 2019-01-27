@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="vendors/angular.min.js"></script>
+    <script src="vendors/angular-route.min.js"></script>
     <title>DogAsAFriend</title>
     <link rel="stylesheet" href="/style.css">
+    <script src="/scripts.js"></script>
 </head> 
-<body ng-app="myApp">
+<body ng-app="app">
     <nav>
         <div class="items">
-            <a >Home</a>
-            <a >Events </a>
-            <a >Items</a> 
-            <a >Rehoming </a> 
-            <a >Send storie</a>
-            <a >Stories</a>
-            <a >Dogs </a>
+            <a href="/">Home</a>
+            <a href="#!events">Events </a>
+            <a href="#!createEvent">Create Event</a>
+            <a href="#!items">Items</a> 
+            <a href="#!rehoming">Rehoming </a> 
+            <a href="#!sendStory">Send story</a>
+            <a href="#!stories">Stories</a>
+            <a href="#!dogs">Dogs </a>
         </div>
     </nav>
     <div class="content">
         <div class="side">
         <p>“You can say any foolish thing to a dog, and the dog will give you a look that says, ‘Wow, you’re right! I never would’ve thought of that!’” <span>—Dave Barry</span></p>
         </div>
-        <div class="main" ng-view></div>
+        
+        <!--class="main"-->
+        <div ng-view></div>
     </div>
 </body>
 </html>

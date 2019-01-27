@@ -26,6 +26,8 @@ nav .items{
     margin: 0 3rem;
 }
 nav .items a{
+    text-decoration: none;
+    color: #111;
     display: inline-block;
     padding: .5rem 3rem;
     border-bottom: 1px solid transparent;
