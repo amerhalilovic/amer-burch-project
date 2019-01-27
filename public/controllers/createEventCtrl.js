@@ -1,4 +1,4 @@
-var arr = angular.module("app")
+
 
 app.controller("createEventCtrl", function ($scope, $http, $location) {
     $scope.organisator = "";

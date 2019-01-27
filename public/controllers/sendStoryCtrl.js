@@ -1,4 +1,4 @@
-var arr = angular.module("app")
+
 
 app.controller("sendStoryCtrl", function ($scope, $http, $location) {
     $scope.nickname = "";
