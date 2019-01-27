@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+nav {
+    padding: 1.5rem 0;
+    color: #111;
+    border-bottom: 1px solid #111;
+    font-size: 2.2rem;
+    background: #eee;
+}
+nav .items{
+    margin: 0 3rem;
+}
+nav .items a{
+    display: inline-block;
+    padding: .5rem 3rem;
+    border-bottom: 1px solid transparent;
+}
+nav .items a:hover{
+    cursor: pointer;
+    transition: 1s;
+    border-color: #111;
+}
+.content{
+    display:flex;
+    min-height: 100vh;
+}
+.side{
+    flex-basis: 30%;
+    min-height: 100vh;
+    font-size: 2.4rem;
+    background: #eee;
+    color: #111;
+    letter-spacing: 3px;
+    padding: 10rem 3rem;
+    line-height: 2;
+    border-right: 1px solid #111;
+}
+.side span{
+    font-weight: bold;
+}
+.main {
+    background: whitesmoke;
+    flex-basis: 70%;
+}
+
