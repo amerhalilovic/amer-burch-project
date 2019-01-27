@@ -1,12 +1,12 @@
 
-<form style="margin: 10rem 5rem;" action="" >
+<form ng-submit="submit()" ng-controller="sendStoryCtrl" style="margin: 10rem 5rem;" >
         <div class="form-group">
             <label for="nickname" class="center-block"> <h3>Enter your nickname, and share your story with us </h3></label>
-            <input type="text" class="form-control" name="nickname" placeholder="Enter your nickname"> <br>  
+            <input ng-model="nickname" type="text" class="form-control" name="nickname" placeholder="Enter your nickname"> <br>  
           </div>
           <div class="form-group">
-            <textarea class="form-control" id="textArea" rows="3" placeholder="Write your story here:"></textarea> <br>
-            <input type="button" class="btn btn-info center-block" value="Send us your story "> 
+            <textarea ng-model="text" class="form-control" id="textArea" rows="3" placeholder="Write your story here:"></textarea> <br>
+            <input  type="submit" class="btn btn-info center-block" value="Send us your story "> 
         </div>
 
     </form>

@@ -27,38 +27,3 @@ app.config(function($routeProvider) {
     templateUrl: "./views/items.html"
   })
 });
-/*app.config(['$routeProvider',
-  function config($routeProvider) {
-    $routeProvider.
-      when('/', {
-        template: '<h1>eo me brete</h1>'
-      })
-      otherwise('/');
-  }
-]);*/
-    
-//app.config(function($routeProvider) {
-  //$routeProvider
-  //.when("/", {
-  //  templateUrl : "./views/home.html"
-  //})
-  /*.when("/rehoming", {
-    templateUrl : "rehoming.html"
-  })
-  .when("/storie", {
-    templateUrl : "storie.html"
-  }).when("/items", {
-    templateUrl : "items.html"
-  })
-  .when("/dogs", {
-    templateUrl : "dogs.html"
-  }).when("/sendstorie",{
-    templateUrl:"sendstori.html"
-  })*/
-  //.otherwise({redirectTo: '/'});
-
-  /*$locationProvider.html5Mode({
-        enabled:true,
-        requireBase:false
-  });*/
-//});

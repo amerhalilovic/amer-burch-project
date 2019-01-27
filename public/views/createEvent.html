@@ -1,13 +1,13 @@
-<form>
+<form ng-submit="submit()" ng-controller="createEventCtrl" >
     <div class="form-group " style="margin: 10rem 5rem; width: 60vw">
         <h1>Create Event</h1>
         <label for="organisatorName">Organisator name </label>
-        <input type="text" class="form-control form-control-sm" id="organisatorName" placeholder="Enter your name">
+        <input ng-model="organisator" type="text" class="form-control form-control-sm" id="organisatorName" placeholder="Enter your name">
 
         <label for="eventAdress">Event address</label>
-        <input type="text" class="form-control form-control-sm" id="eventAdress" placeholder="Enter address ">
+        <input ng-model="address" type="text" class="form-control form-control-sm" id="eventAdress" placeholder="Enter address ">
         <label for="Date">Date</label>
-        <input type="date" class="form-control form-control-sm" id="time" placeholder="Choose Date">
+        <input ng-model="date" type="date" class="form-control form-control-sm" id="time" placeholder="Choose Date">
         <br>
         <button type="submit" class="btn btn-success center-block">Add Event</button>
     </div>
