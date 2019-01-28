@@ -19,6 +19,8 @@ mongoose.connect('mongodb://admin:admin123@ds213615.mlab.com:13615/projekat', {u
     }
 })
 
+mongoose.set('useFindAndModify', false);
+
 app.use('/', express.static(path.join(__dirname, 'public')))
 
 app.use('/api', router)

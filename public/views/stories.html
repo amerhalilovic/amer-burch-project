@@ -1,1 +1,18 @@
-<h1>prices</h1>
+<div ng-controller="storyCtrl" ng-init="get_Storys()">
+
+<div ng-repeat="x in stories" style="margin:5rem">
+<h3>Nickname: {{x.nick}}</h3>    
+<pre>
+    Story :
+    {{x.text}}
+    
+</pre>
+<div class="form-group" ng-if="editing.id == x._id">
+    
+<textarea class="form-control" ng-model="editing.text" cols="30" rows="5"></textarea>
+<button class="btn btn-success btn-sm" ng-click="confirm()"> Confirm </button>
+</div>
+<button class="btn btn-danger btn-sm" ng-click="delete(x._id)">Delete</button>
+<button class="btn btn-info btn-sm" ng-click="edit(x)"> Edit </button>
+</div>
+</div>

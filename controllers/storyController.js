@@ -25,7 +25,8 @@ exports.deleteStory = function(req,res){
 
 exports.updateStory = function(req, res){
     const id = req.params.id;
-    Story.findByIdAndUpdate(id,{text:req.body.text})
+    console.log(req.body)
+    Story.findOneAndUpdate({_id: id}, {text:req.body.text})
         .then(function(data){
             res.json(data)
         })
