@@ -1,7 +1,7 @@
-<table ng-controller="eventsCtrl" ng-init="get_Events()" class="table table-striped table-dark" style="margin: 0 auto; font-size: 2rem;" >
+<table  ng-controller="eventsCtrl" ng-init="get_Events()" class="table table-striped table-dark" style="margin:5rem; font-size: 2rem;" >
     <thead>
         <tr>
-        <th scope="col">#</th>
+        
         <th scope="col">Organisator</th>
         <th scope="col">Address</th>
         <th scope="col">Date</th>
@@ -9,7 +9,6 @@
     </thead>
     <tbody>
         <tr ng-repeat="x in events">
-            <td></td>
             <td scope="row">{{x.organisator}}</td>
             <td scope="row">{{x.adresa}}</td>
             <td scope="row">{{x.date | date : shortDate}}</td>

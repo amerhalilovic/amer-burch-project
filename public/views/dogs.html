@@ -1,1 +1,18 @@
-<h1>ng repeat dogs</h1>
+<div ng-controller="dogsController" ng-init="get_Dogs()">
+    <div ng-repeat="y in dogs" style="margin:3rem;">
+            <h3>{{y.type}} </h3>
+     <div ng-style="{'background-image':'url({{y.imageURL}})'}" style="width: 400px; height: 200px; background-size: cover;"></div>
+            
+
+
+            <pre> 
+                Year :  {{y.year}} 
+                Easy to train : {{y.easyToTrain}}
+                Intelligence (IQ): {{y.intelligence}}
+                Life span : {{y.lifeSpan}}
+            </pre>
+
+    </div>
+
+
+</div>

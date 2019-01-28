@@ -1,1 +1,12 @@
-<h1>ng repeat items</h1>
+<div ng-controller="itemsCtrl" ng-init="get_Items()">
+
+    <div ng-repeat="y in items" style="margin:5rem;">
+        <h3>{{y.name}} </h3>
+        <div ng-style="{'background-image':'url({{y.imageURL}})'}" style="width: 300px; height: 200px; background-size: cover; background-position: center;"></div>
+        <pre> {{y.description}} 
+            {{y.price | currency}}
+        </pre>
+    
+    </div>
+
+</div>
